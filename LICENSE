@@ -1,0 +1,122 @@
+Custom Non-Commercial License with Attribution
+
+Copyright (c) 2026 Mike Fhas
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the “Software”), to
+use, deploy, copy, modify, and distribute the Software, subject to the
+following terms and conditions.
+
+────────────────────────────────────────────────────────────
+1. PERMITTED USES
+────────────────────────────────────────────────────────────
+
+The Software may be:
+
+a) Used for personal, educational, research, or internal purposes.
+
+b) Deployed publicly or privately, including on servers, cloud platforms,
+   or self-hosted environments.
+
+c) Modified, provided that such modifications are minor or incremental and
+   do not fundamentally change the core purpose or nature of the Software.
+
+d) Shared or redistributed, in original or modified form, as long as all
+   conditions of this license are met.
+
+────────────────────────────────────────────────────────────
+2. ATTRIBUTION REQUIREMENT
+────────────────────────────────────────────────────────────
+
+Any use, deployment, distribution, or modification of the Software must
+include clear and visible attribution to the original author.
+
+The attribution must:
+
+- Include the name or pseudonym: Mike Fhas OR Saucisson
+- Be displayed in at least one of the following:
+  • the source code
+  • the project documentation
+  • the README file
+  • an "About" page or equivalent interface (if applicable)
+
+Removing, obscuring, or misrepresenting the original authorship is strictly
+prohibited.
+
+────────────────────────────────────────────────────────────
+3. NON-COMMERCIAL USE ONLY
+────────────────────────────────────────────────────────────
+
+The Software is licensed for NON-COMMERCIAL USE ONLY.
+
+You may NOT:
+
+a) Sell the Software, in whole or in part.
+
+b) Charge any fee for access to, distribution of, or use of the Software.
+
+c) Include the Software in a commercial product, service, SaaS, platform,
+   or offering that generates revenue, directly or indirectly.
+
+d) Use the Software in any context where it provides commercial advantage
+   or monetary compensation.
+
+Any commercial use requires prior written permission from the author.
+
+────────────────────────────────────────────────────────────
+4. NO COMMERCIAL SUBLICENSING
+────────────────────────────────────────────────────────────
+
+You may not sublicense, relicense, or redistribute the Software under terms
+that allow commercial use.
+
+Any attempt to bypass, weaken, or remove the non-commercial restriction of
+this license is null and void.
+
+────────────────────────────────────────────────────────────
+5. MODIFICATIONS AND DERIVATIVE WORKS
+────────────────────────────────────────────────────────────
+
+Modifications are permitted only if:
+
+- They remain compatible with the original intent of the Software.
+- They do not rebrand the Software as an original or independent work.
+- This license is included unchanged with the modified version.
+
+Derivative works must clearly indicate that they are based on the original
+Software and must credit the original author.
+
+────────────────────────────────────────────────────────────
+6. OWNERSHIP
+────────────────────────────────────────────────────────────
+
+The Software is not transferred or sold.
+
+All rights, title, and interest in the Software remain with the original
+author, except for the limited rights expressly granted by this license.
+
+────────────────────────────────────────────────────────────
+7. TERMINATION
+────────────────────────────────────────────────────────────
+
+This license is automatically terminated if any of its terms are violated.
+
+Upon termination, you must immediately stop using, distributing, and
+deploying the Software and destroy all copies in your possession.
+
+────────────────────────────────────────────────────────────
+8. DISCLAIMER OF WARRANTY
+────────────────────────────────────────────────────────────
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+
+────────────────────────────────────────────────────────────
+9. LIMITATION OF LIABILITY
+────────────────────────────────────────────────────────────
+
+IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING
+FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
