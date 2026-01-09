@@ -1,0 +1,292 @@
+/* New Sleek Dark Police Theme */
+
+/* Define custom CSS variables for our color palette */
+:root {
+  --rpd-dark-bg: #1a1a2e; /* Deep charcoal / very dark slate gray */
+  --rpd-dark-surface: #1f2b40; /* Slightly lighter for cards, modals */
+  --rpd-dark-border: #334155; /* Subtle border color */
+  --rpd-dark-text: #e0e0e0; /* Soft white for main text */
+  --rpd-dark-text-secondary: #a0a0a0; /* Secondary text color */
+  --rpd-accent-blue: #007bff; /* Vibrant blue for primary actions */
+  --rpd-accent-blue-rgb: 0, 123, 255;
+  --rpd-accent-blue-hover: #0056b3; /* Darker blue on hover */
+  --rpd-accent-blue-light: #60a5fa; /* Lighter blue for links */
+  --rpd-warning: #ffc107; /* Standard warning yellow */
+  --rpd-danger: #dc3545; /* Standard danger red */
+  --rpd-success: #28a745; /* Standard success green */
+}
+
+/* Apply theme variables to Bootstrap's dark mode */
+[data-bs-theme="dark"] {
+  --bs-body-bg: var(--rpd-dark-bg);
+  --bs-body-color: var(--rpd-dark-text);
+  --bs-emphasis-color: #fff; /* Ensure strong emphasis for white */
+
+  --bs-secondary-bg: var(--rpd-dark-surface);
+  --bs-tertiary-bg: var(--rpd-dark-surface); /* Cards and similar elements */
+
+  --bs-primary: var(--rpd-accent-blue);
+  --bs-primary-rgb: var(--rpd-accent-blue-rgb);
+  --bs-secondary: var(--rpd-dark-text-secondary);
+  --bs-success: var(--rpd-success);
+  --bs-info: #17a2b8; /* A good info blue for dark theme */
+  --bs-warning: var(--rpd-warning);
+  --bs-danger: var(--rpd-danger);
+
+  --bs-link-color: var(--rpd-accent-blue-light);
+  --bs-link-hover-color: var(--rpd-accent-blue);
+
+  --bs-border-color: var(--rpd-dark-border);
+  --bs-border-color-translucent: rgba(var(--rpd-dark-border-rgb), 0.5); /* Adjust if needed */
+
+  /* Form controls */
+  --bs-form-control-bg: var(--rpd-dark-surface);
+  --bs-form-control-color: var(--rpd-dark-text);
+  --bs-form-control-border-color: var(--rpd-dark-border);
+  --bs-form-control-focus-border-color: var(--rpd-accent-blue);
+  --bs-form-control-placeholder-color: var(--rpd-dark-text-secondary);
+}
+
+/* Custom styles beyond Bootstrap overrides */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Navbar specific adjustments */
+.navbar {
+  background-color: var(--rpd-dark-surface) !important; /* Navbar should match surface */
+  border-bottom: 1px solid var(--rpd-dark-border);
+}
+
+.navbar-brand {
+    color: var(--rpd-accent-blue) !important;
+    font-weight: 700;
+}
+
+.navbar-text {
+    color: var(--rpd-dark-text-secondary) !important;
+}
+
+/* Card Styling */
+.card {
+  background-color: var(--rpd-dark-surface);
+  border-color: var(--rpd-dark-border);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle depth */
+  border-radius: 8px;
+  overflow: hidden; /* For smooth borders with image or content */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card-header {
+    background-color: var(--rpd-dark-bg); /* Darker header */
+    border-bottom-color: var(--rpd-dark-border);
+    color: var(--rpd-dark-text);
+    font-weight: 500;
+}
+
+/* Tables */
+.table {
+  --bs-table-color: var(--rpd-dark-text);
+  --bs-table-bg: var(--rpd-dark-surface);
+  --bs-table-border-color: var(--rpd-dark-border);
+  --bs-table-striped-bg: #223048; /* Slightly different stripe */
+  --bs-table-hover-bg: #2a3c58; /* Noticeable hover */
+  --bs-table-accent-bg: var(--bs-table-hover-bg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden; /* For rounded corners */
+}
+
+.table th {
+    color: var(--rpd-accent-blue);
+    border-bottom-color: var(--rpd-dark-border);
+}
+
+.table td {
+    border-top-color: var(--rpd-dark-border);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--rpd-accent-blue);
+  border-color: var(--rpd-accent-blue);
+}
+.btn-primary:hover {
+  background-color: var(--rpd-accent-blue-hover);
+  border-color: var(--rpd-accent-blue-hover);
+}
+
+.btn-outline-light {
+    color: var(--rpd-accent-blue);
+    border-color: var(--rpd-accent-blue);
+}
+.btn-outline-light:hover {
+    background-color: var(--rpd-accent-blue);
+    color: var(--rpd-dark-bg);
+    border-color: var(--rpd-accent-blue);
+}
+
+/* Animations (more refined) */
+@keyframes fadeInSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container.mt-4 {
+  animation: fadeInSlideUp 0.6s ease-out forwards; /* Apply to main content area */
+}
+
+/* Micro-interactions */
+.btn {
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:not(.btn-link):hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 5px 15px rgba(var(--rpd-accent-blue-rgb), 0.3);
+}
+
+.form-control, .form-select, .form-control:focus, .form-select:focus {
+    box-shadow: none !important;
+    border-color: var(--rpd-dark-border);
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--rpd-accent-blue);
+    box-shadow: 0 0 0 0.25rem rgba(var(--rpd-accent-blue-rgb), 0.25) !important;
+}
+
+/* Alert styling */
+.alert {
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.alert-success { background-color: #21402c; color: #7fbf7f; border-color: #38613d; }
+.alert-danger { background-color: #4a2121; color: #ff8c8c; border-color: #7a3030; }
+.alert-warning { background-color: #4a3821; color: #ffc107; border-color: #7a5d30; }
+.alert-info { background-color: #1a3c4a; color: #8cdbff; border-color: #30667a; }
+
+/* Timeline for Recent Activity */
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 12px;
+    top: 5px;
+    bottom: 5px;
+    width: 4px;
+    background: var(--rpd-dark-border);
+    border-radius: 2px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.timeline-icon {
+    position: absolute;
+    left: -20px;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    z-index: 1;
+}
+
+.timeline-content {
+    padding-left: 2rem;
+    background: var(--rpd-dark-bg);
+    border-radius: 8px;
+    padding: 1rem;
+    border: 1px solid var(--rpd-dark-border);
+}
+
+.timeline-content h6 {
+    color: var(--rpd-accent-blue-light);
+}
+
+.timeline-content p {
+    margin-bottom: 0.25rem;
+    color: var(--rpd-dark-text);
+}
+
+/* Promotions Page - V3 Card Design */
+.promo-card-v3 {
+    position: relative;
+    border: 1px solid var(--rpd-dark-border);
+    border-radius: 12px;
+    background-color: var(--rpd-dark-surface);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Important for absolute positioned children */
+}
+
+.promo-card-v3:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+}
+
+.promo-card-v3 .card-body {
+    padding: 1.5rem;
+}
+
+.promo-card-v3 .rank-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: rgba(var(--rpd-accent-blue-rgb), 0.2);
+    color: var(--rpd-accent-blue-light);
+    border-radius: 50px;
+    padding: 0.3rem 0.7rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.promo-card-v3 .agent-info a {
+    color: var(--rpd-dark-text);
+    text-decoration: none;
+}
+
+.promo-card-v3 .agent-info a:hover h4 {
+    color: var(--rpd-accent-blue-light);
+}
+
+.promo-card-v3 .progress-bar {
+    background: linear-gradient(to right, var(--rpd-accent-blue-light), var(--rpd-accent-blue));
+}
+
+.promo-card-v3 .breakdown-section {
+    margin-top: 1.5rem;
+}
+
+.promo-card-v3 .breakdown-item i {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.promo-card-v3 .breakdown-item {
+    padding: 0 0.75rem; /* Add horizontal padding to create space between items */
+}
